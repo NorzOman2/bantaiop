@@ -10,6 +10,7 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+make a hpf
 
 export const metadata = {
   title: "GitMax Automation Next.js",
