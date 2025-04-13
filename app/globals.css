@@ -1,22 +1,22 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-.center {
-  text-align: center;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 body {
-  display: flex;
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  /* ... existing styles ... */
+  line-height: 1.6; /* Improves readability */
+  font-size: 16px; /* Set a base font size */
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700; /* Consistent header weight */
+  margin-bottom: 1rem; /* Spacing between headings and content */
+}
+
+a {
+  color: var(--accent-color); /* Define an accent color below */
+  text-decoration: none; /* Remove default underlines */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+a:hover {
+  color: darken(var(--accent-color), 10%); /* Darken accent on hover */
+}
+
+/* Add more typographic styles for other elements (e.g., p, ul, ol) as needed */
