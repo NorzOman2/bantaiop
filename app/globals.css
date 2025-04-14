@@ -1,22 +1,48 @@
 body {
-  /* ... existing styles ... */
-  line-height: 1.6; /* Improves readability */
-  font-size: 16px; /* Set a base font size */
+  line-height: 1.6;
+  font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700; /* Consistent header weight */
-  margin-bottom: 1rem; /* Spacing between headings and content */
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #333;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
 }
 
 a {
-  color: var(--accent-color); /* Define an accent color below */
-  text-decoration: none; /* Remove default underlines */
-  transition: color 0.3s ease; /* Smooth color transition on hover */
+  color: #007bff;
+  text-decoration: none;
 }
 
 a:hover {
-  color: darken(var(--accent-color), 10%); /* Darken accent on hover */
+  text-decoration: underline;
 }
 
-/* Add more typographic styles for other elements (e.g., p, ul, ol) as needed */
+ul, ol {
+  margin-bottom: 1rem;
+  padding-left: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: darken(var(--accent-color), 10%);
+}
